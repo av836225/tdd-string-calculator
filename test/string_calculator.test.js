@@ -35,6 +35,13 @@ test('string calcuator is a function returns the sum of multiple numbers when mu
     expect(add('//;\n1;2')).toEqual(3);
 });
 
+//8. case to check if the calculator throws an error when a negative number is passed
+test('string calcuator is a function throws an error when a negative number is passed', () => {
+    expect(() => add('1,-2')).toThrow('negative numbers not allowed: -2');
+});
+
+
+
 
 
 
