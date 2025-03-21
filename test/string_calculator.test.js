@@ -30,6 +30,11 @@ test('string calcuator is a function returns the sum of multiple numbers when mu
     expect(add('1\n5,6')).toEqual(12);
 });
 
+//7. case to check if the calculator returns the sum of multiple numbers when multiple numbers are passed with custom delimiter
+test('string calcuator is a function returns the sum of multiple numbers when multiple numbers are passed with custom delimiter', () => {
+    expect(add('//;\n1;2')).toEqual(3);
+});
+
 
 
 
