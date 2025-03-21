@@ -40,6 +40,11 @@ test('string calcuator is a function throws an error when a negative number is p
     expect(() => add('1,-2')).toThrow('negative numbers not allowed: -2');
 });
 
+//9. case to check if the calculator throws an error when multiple negative numbers are passed
+test('string calcuator is a function throws an error when multiple negative numbers are passed', () => {
+    expect(() => add('1,-2,-3')).toThrow('negative numbers not allowed: -2,-3');
+});
+
 
 
 
