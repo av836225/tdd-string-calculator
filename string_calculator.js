@@ -4,7 +4,7 @@ function add(numbers) {
     if (!numbers) return 0;
 
     // if the input is a single or multiple number return the number or sum of the numbers
-    let delimiter = /,/;
+    let delimiter = /,|\n/;
     const numArray = numbers.split(delimiter).map(Number);
 
     return numArray.reduce((sum, num) => sum + num, 0);
