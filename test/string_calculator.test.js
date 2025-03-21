@@ -15,6 +15,12 @@ test('string calcuator is a function returns the number when a single number is 
     expect(add('1')).toEqual(1);
 });
 
+//4. case to check if the calculator returns the sum of two numbers when two numbers are passed
+test('string calcuator is a function returns the sum of two numbers when two numbers are passed', () => {
+    expect(add('1,5')).toEqual(6);
+});
+
+
 
 
 
