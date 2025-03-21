@@ -25,6 +25,11 @@ test('string calcuator is a function returns the sum of multiple numbers when mu
     expect(add('1,5,6')).toEqual(12);
 });
 
+//6. case to check if the calculator returns the sum of multiple numbers when multiple numbers are passed with new line
+test('string calcuator is a function returns the sum of multiple numbers when multiple numbers are passed with new line', () => {
+    expect(add('1\n5,6')).toEqual(12);
+});
+
 
 
 
