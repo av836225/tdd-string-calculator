@@ -20,6 +20,10 @@ test('string calcuator is a function returns the sum of two numbers when two num
     expect(add('1,5')).toEqual(6);
 });
 
+//5. case to check if the calculator returns the sum of multiple numbers when multiple numbers are passed
+test('string calcuator is a function returns the sum of multiple numbers when multiple numbers are passed', () => {
+    expect(add('1,5,6')).toEqual(12);
+});
 
 
 
